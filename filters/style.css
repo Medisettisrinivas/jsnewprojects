@@ -1,0 +1,36 @@
+.filter-cards{
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 2%;
+    margin: 3% 7%;
+    
+}
+
+.card {
+    width: 250px;
+    margin-bottom: 2%;
+    
+}
+
+.card img {
+    width: 250px;
+}
+
+.carousel-inner {
+    max-height:600px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 700px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.filters input {
+    margin-bottom: 6px;
+}
+

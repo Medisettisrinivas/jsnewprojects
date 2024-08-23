@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "filters",
+			"path": "."
+		},
+		{
+			"name": "women",
+			"path": "../../../Downloads/Myntra Fashion Store - Shop for Latest Fashionable Collection Online _ Myntra/women"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "filters"
+	}
+}

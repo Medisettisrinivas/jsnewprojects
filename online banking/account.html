@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account details</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="index.js"></script>
+
+  
+</head>
+<body class="bodymain">
+   <a href="./index.html"><div class="backbutton"> <button >Back</button></div></a>
+    <div class="main">
+        <h1>ACCOUNT DETAILS</h1>
+        <P><b>Account Holder Name:</b>Medisetti Srinivas</P>
+        <p><b>Mobile Number:</b>9182591474</p>
+        <p><b>BRANCH NAME:</b>Kakinada</p>
+        <p><b>IFSC CODE:</b>002127</p>
+        <p><b>Available Balance</b>50000</p>
+        <button id="deb">DEBIT</button>
+        <button id="cre">CREDIT</button>
+
+    </div>
+                       
+<div id="popup3" class="popup" style="display: none;">
+    <h2>Verify your pin</h2>
+    <input type="password" id="numberInput3" class="inputbox" name="numberInput" placeholder="Enter your pin" min="1" max="100"><br><br>
+    <button class="btn btn-primary" id="verify3">Verify</button>
+  </div>
+  <div id="popup2" class="popup" style="display: none;">
+    <h2>Verify your pin</h2>
+    <input type="password" id="numberInput" class="inputbox" name="numberInput" placeholder="Enter your pin" min="1" max="100"><br><br>
+    <button class="btn btn-primary" id="verify2">Verify</button>
+  </div>
+  
+
+
+    <script>
+       
+      
+        
+document.addEventListener("DOMContentLoaded", ()=>{
+   let popupPin=document.querySelector("#popup3");
+   let btnAcc = document.querySelector("#deb");
+   let verifyPin = document.querySelector("#verify3");
+ 
+   btnAcc.addEventListener('click',()=>{
+      popupPin.style.display='block';
+      // alert("pin succesfull");
+      // window.location="account.html";
+   });
+
+   verifyPin.addEventListener('click',()=>{
+      let getInput=document.getElementById("numberInput3").value;
+
+      let password= '1234';
+
+      if(password===getInput){
+           alert("pin succesfull");
+       window.location="debit.html";
+      }
+      else[
+         alert("IncorrectPin, please try again")
+      ] 
+   }); });
+
+
+
+   document.addEventListener("DOMContentLoaded", ()=>{
+   let popupPin=document.querySelector("#popup2");
+   let btnAcc = document.querySelector("#cre");
+   let verifyPin = document.querySelector("#verify2");
+ 
+   btnAcc.addEventListener('click',()=>{
+      popupPin.style.display='block';
+      // alert("pin succesfull");
+      // window.location="account.html";
+   });
+
+   verifyPin.addEventListener('click',()=>{
+      let getInput=document.getElementById("numberInput").value;
+
+      let password= '1234';
+
+      if(password===getInput){
+           alert("pin succesfull");
+       window.location="credit.html";
+      }
+      else[
+         alert("IncorrectPin, please try again")
+      ] 
+   }); });
+
+
+    </script>
+
+</body>
+</html>
